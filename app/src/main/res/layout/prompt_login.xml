@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_mpt_login_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="本功能由云端提供，需要连接网络，并登陆您的账号"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btn_mpt_login_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+
+
+    <TextView
+        android:id="@+id/tv_mpt_login_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有账号？注册"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_mpt_login_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="找回密码"
+        android:textSize="18sp"
+        />
+</LinearLayout>

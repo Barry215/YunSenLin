@@ -1,6 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w"
+                app:cardCornerRadius="8dp">
+
+                <!--android:elevation="5dp"-->
+                <!--app:cardElevation="5dp"-->
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cv_fin_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最近的账单"
+                        android:textSize="18sp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_cv_1_fin_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_cv_1_fin_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+550.85"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_1_fin_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天津小陈"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_cv_1_fin_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_cv_1_fin_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.856立方米"
+                                android:textSize="20sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_cv_1_fin_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2016-09-12 15:30:20"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_2_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看更多账目"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_3_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日统计"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_4_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看更多每日统计"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_5_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月统计"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_6_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="统计筛选"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_fin_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="90%w">
+
+                <TextView
+                    android:id="@+id/tv_cv_7_fin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前账号：18100174605"/>
+
+            </android.support.v7.widget.CardView>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
