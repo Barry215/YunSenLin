@@ -6,4 +6,13 @@
     <color name="fragment_background">#394149</color>
     <color name="fragment_text">#cbcacc</color>
     <color name="fragment_text_accent">#ffffff</color>
+    <color name="cardView_background">#cbcacc</color>
+    <color name="cardView_text">#394149</color>
+    <color name="cardView_text_time">#5d6164</color>
+    <color name="cardView_text_red">#de4332</color>
+    <color name="cardView_text_green">#00a57b</color>
+    <color name="prompt_text_color">#cbcacc</color>
+    <color name="prompt_btn_color">#394149</color>
+    <color name="prompt_btn_background">#ffffff</color>
+
 </resources>

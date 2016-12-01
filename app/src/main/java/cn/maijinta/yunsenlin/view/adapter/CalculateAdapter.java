@@ -50,7 +50,8 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
         drawableList.add(R.drawable.calculate_8);
         drawableList.add(R.drawable.calculate_9);
         holder.textView.setText(titles.get(position));
-        Glide.with(activity).load(drawableList.get(position)).into(holder.imageView);
+//        Glide.with(activity).load(drawableList.get(position)).into(holder.imageView);
+        holder.imageView.setImageResource(drawableList.get(position));
     }
 
     @Override

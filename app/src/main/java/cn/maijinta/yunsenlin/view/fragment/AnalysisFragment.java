@@ -12,7 +12,7 @@ import cn.maijinta.yunsenlin.view.fragment.base.BaseFragment;
 public class AnalysisFragment extends BaseFragment {
     @Override
     protected int getPageLayoutId() {
-        return R.layout.fragment_analysis;
+        return R.layout.prompt_login;
     }
 
     @Override

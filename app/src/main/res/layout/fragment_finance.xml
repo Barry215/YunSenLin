@@ -7,95 +7,148 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
 
 
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cv_fin_1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w"
-                app:cardCornerRadius="8dp">
+                app:layout_widthPercent="80%w"
+                app:cardCornerRadius="5dp"
+                android:gravity="center_horizontal">
 
                 <!--android:elevation="5dp"-->
                 <!--app:cardElevation="5dp"-->
 
                 <com.zhy.android.percent.support.PercentLinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_marginTopPercent="3%w">
 
                     <TextView
                         android:id="@+id/tv_cv_fin_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="最近的账单"
-                        android:textSize="18sp"
+                        android:text="@string/cv_fin_1"
+                        android:textSize="15sp"
+                        android:textColor="@color/cardView_text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
                         />
 
 
-                    <LinearLayout
+                    <com.zhy.android.percent.support.PercentLinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:id="@+id/iv_cv_1_fin_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-
                         <TextView
-                            android:id="@+id/tv_cv_1_fin_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="+550.85"
-                            android:textSize="20sp"
+                            android:text="@string/renMingBi"
+                            android:textSize="26sp"
+                            android:textColor="@color/cardView_text_red"
+                            app:layout_marginLeftPercent="7%w"
                             />
 
-                        <TextView
-                            android:id="@+id/tv_cv_1_fin_3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="天津小陈"
-                            android:textSize="20sp"
-                            />
-                    </LinearLayout>
+                        <com.zhy.android.percent.support.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_cv_1_fin_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+550.85"
+                                android:textSize="20sp"
+                                android:textColor="@color/cardView_text_red"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_cv_1_fin_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="天津小陈"
+                                android:textSize="20sp"
+                                android:textColor="@color/cardView_text_green"
+                                android:layout_alignParentRight="true"
+                                app:layout_marginRightPercent="5%w"
+                                />
+                        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
 
 
-                    <LinearLayout
+                    <com.zhy.android.percent.support.PercentLinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_marginBottomPercent="3%w">
 
                         <ImageView
                             android:id="@+id/iv_cv_1_fin_2"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/yuanmu_circle"
+                            android:layout_gravity="center_vertical"
+                            app:layout_heightPercent="15%w"
+                            app:layout_widthPercent="15%w"
+                            app:layout_marginLeftPercent="7%w"
+                            />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                        <com.zhy.android.percent.support.PercentLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <com.zhy.android.percent.support.PercentLinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                app:layout_marginRightPercent="5%w">
+
+                                <TextView
+                                    android:id="@+id/tv_cv_1_fin_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1.856"
+                                    android:textColor="@color/cardView_text"
+                                    android:textSize="20sp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_cv_1_fin_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="立方米"
+                                    android:textColor="@color/cardView_text"
+                                    android:textSize="14sp"/>
+
+                            </com.zhy.android.percent.support.PercentLinearLayout>
 
                             <TextView
-                                android:id="@+id/tv_cv_1_fin_4"
+                                android:id="@+id/tv_cv_1_fin_6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1.856立方米"
-                                android:textSize="20sp"/>
+                                android:text="2016-09-12 15:30:20"
+                                android:textSize="15sp"
+                                android:textColor="@color/cardView_text_time"
+                                app:layout_marginRightPercent="5%w"/>
 
-                            <TextView
-                                android:id="@+id/tv_cv_1_fin_5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="2016-09-12 15:30:20"/>
-                        </LinearLayout>
-                    </LinearLayout>
+                        </com.zhy.android.percent.support.PercentLinearLayout>
+                    </com.zhy.android.percent.support.PercentLinearLayout>
                 </com.zhy.android.percent.support.PercentLinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -104,32 +157,366 @@
                 android:id="@+id/cv_fin_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
 
                 <TextView
                     android:id="@+id/tv_cv_2_fin_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="查看更多账目"/>
+                    android:text="查看更多账目"
+                    android:textSize="15sp"
+                    android:textColor="@color/cardView_text"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cv_fin_3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
-
-                <TextView
-                    android:id="@+id/tv_cv_3_fin_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="每日统计"/>
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
 
+                    <TextView
+                        android:id="@+id/tv_cv_3_fin_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日统计"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/cardView_text"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="木材总材积："
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="755"
+                            android:textSize="20sp"
+                            android:textColor="@color/cardView_text"/>
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立方米"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="原木："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="354"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立方米"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="锯材："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="301"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立方米"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="原条："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立方米"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="木材总收入："
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="755.85"
+                            android:textSize="20sp"
+                            android:textColor="@color/cardView_text_red"/>
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text_red"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="原木："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="354.00"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text_red"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text_red"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="锯材："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="301.00"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text_red"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text_red"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="原条："
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100.00"
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text_red"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text_red"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_26"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="木材总支出："
+                            android:textSize="18sp"
+                            android:textColor="@color/cardView_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textSize="20sp"
+                            android:textColor="@color/cardView_text_green"/>
+
+                        <TextView
+                            android:id="@+id/tv_cv_3_fin_28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textSize="14sp"
+                            android:textColor="@color/cardView_text_green"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -138,13 +525,20 @@
                 android:id="@+id/cv_fin_4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
 
                 <TextView
                     android:id="@+id/tv_cv_4_fin_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="查看更多每日统计"/>
+                    android:text="查看更多每日统计"
+                    android:textSize="15sp"
+                    android:textColor="@color/cardView_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"/>
 
             </android.support.v7.widget.CardView>
 
@@ -152,12 +546,19 @@
                 android:id="@+id/cv_fin_5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
 
                 <TextView
                     android:id="@+id/tv_cv_5_fin_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/cardView_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
                     android:text="月统计"/>
             </android.support.v7.widget.CardView>
 
@@ -165,12 +566,19 @@
                 android:id="@+id/cv_fin_6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
 
                 <TextView
                     android:id="@+id/tv_cv_6_fin_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/cardView_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
                     android:text="统计筛选"/>
             </android.support.v7.widget.CardView>
 
@@ -178,13 +586,39 @@
                 android:id="@+id/cv_fin_7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="90%w">
+                app:layout_widthPercent="80%w"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="5dp">
 
-                <TextView
-                    android:id="@+id/tv_cv_7_fin_1"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="当前账号：18100174605"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cv_7_fin_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/cardView_text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="当前账号："/>
+
+
+                    <TextView
+                        android:id="@+id/tv_cv_7_fin_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/cardView_text"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:text="18100174605"/>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
         </com.zhy.android.percent.support.PercentLinearLayout>
