@@ -22,7 +22,7 @@
         android:id="@+id/btn_mpt_login_1"
         android:layout_width="180dp"
         android:layout_height="40dp"
-        android:background="@color/prompt_btn_background"
+        android:background="@drawable/btn_mpt_login"
         android:text="登录"
         android:textSize="20sp"
         android:textColor="@color/prompt_btn_color"

@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
     android:background="@color/fragment_background"
     tools:context="cn.maijinta.yunsenlin.view.activity.MainActivity">
 
@@ -29,7 +28,8 @@
             app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
             app:layout_marginTopPercent="5%w"
             app:layout_marginBottomPercent="5%w"
-            app:layout_widthPercent="80%w"/>
+            app:layout_widthPercent="80%w"
+            />
 
     </com.zhy.android.percent.support.PercentLinearLayout>
 
