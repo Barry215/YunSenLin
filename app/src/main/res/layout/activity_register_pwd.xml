@@ -8,7 +8,7 @@
     android:background="@color/activity_background">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_register_code_1"
+        android:id="@+id/toolbar_register_pwd_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -31,7 +31,7 @@
     </android.support.v7.widget.Toolbar>
 
     <ImageView
-        android:id="@+id/iv_register_code_1"
+        android:id="@+id/iv_register_pwd_1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/app_logo"
@@ -42,60 +42,60 @@
         />
 
     <TextView
-        android:id="@+id/tv_register_code_1"
+        android:id="@+id/tv_register_pwd_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:text="我们已发送验证短信到这个手机号码"
+        android:text="请输入密码"
         android:textColor="@color/activity_text"
         android:textSize="18sp"
         />
 
     <EditText
-        android:id="@+id/ed_register_code_1"
+        android:id="@+id/ed_register_pwd_1"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:hint="手机验证码"
+        android:hint="请输入密码"
         android:textSize="20sp"
         android:textColor="@color/activity_ed_text"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:background="@drawable/ed_register"
         android:textCursorDrawable="@drawable/ed_cursor"
-        app:layout_widthPercent="60%w"
-        />
-
-    <Button
-        android:id="@+id/btn_register_code_1"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:background="@drawable/btn_register_next"
-        android:text="下一步"
-        android:textSize="20sp"
-        android:textColor="@color/activity_btn_text_white"
         app:layout_widthPercent="80%w"
-        android:enabled="false"
         />
 
-    <Button
-        android:id="@+id/btn_register_code_2"
+    <EditText
+        android:id="@+id/ed_register_pwd_2"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:background="@drawable/btn_register_next"
-        android:text="59 秒后可以重新发送短信"
+        android:hint="请再次输入密码"
+        android:textSize="20sp"
+        android:textColor="@color/activity_ed_text"
+        android:inputType="textPassword"
+        android:background="@drawable/ed_register"
+        android:textCursorDrawable="@drawable/ed_cursor"
+        app:layout_widthPercent="80%w"
+        />
+
+    <Button
+        android:id="@+id/btn_register_pwd_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/btn_register_next_true"
+        android:text="下一步"
         android:textSize="20sp"
         android:textColor="@color/activity_btn_text_white"
         app:layout_widthPercent="80%w"
-        android:enabled="false"
         />
 
 </com.zhy.android.percent.support.PercentLinearLayout>

@@ -21,6 +21,7 @@
         <activity android:name=".view.activity.LoginActivity"/>
         <activity android:name=".view.activity.RegisterPhoneActivity"/>
         <activity android:name=".view.activity.RegisterCodeActivity"/>
+        <activity android:name=".view.activity.RegisterPwdActivity"/>
 
     </application>
 
