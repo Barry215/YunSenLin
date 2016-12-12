@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单棵原木材积计算(原木2013)"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_calculate_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检尺长"
+            android:textColor="@color/activity_text_accent"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_calculate_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/tv_calculate_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="米"
+            android:textColor="@color/activity_text_accent"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_calculate_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/edit_state"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_calculate_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检尺径"
+            android:textColor="@color/activity_text_accent"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_calculate_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/tv_calculate_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厘米"
+            android:textColor="@color/activity_text_accent"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_calculate_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/edit_state"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tv_calculate_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="材积"
+                android:textSize="24sp"
+                android:textColor="@color/activity_text_accent"
+                android:layout_marginLeft="30dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_calculate_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/activity_text_accent"
+                android:layout_marginRight="40dp"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

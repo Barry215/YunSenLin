@@ -24,6 +24,10 @@
 
 
 
+    <color name="item_tv_background">#ffffff</color>
+    <color name="item_iv_background">#f4741e</color>
+
+
     <color name="cardView_background">#cbcacc</color>
     <color name="cardView_text">#394149</color>
     <color name="cardView_text_time">#5d6164</color>

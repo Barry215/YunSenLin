@@ -1,6 +1,7 @@
 package cn.maijinta.yunsenlin.view.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
+import cn.maijinta.yunsenlin.view.activity.CalculatorActivity;
 
 /**
  * Created by frank on 16/11/30.
@@ -24,10 +26,12 @@ import cn.maijinta.yunsenlin.R;
 public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.CalculateHolder> {
 
     private List<String> titles;
+    private List<Integer> drawableList;
     private Activity activity;
 
-    public CalculateAdapter(List<String> titles, Activity activity) {
+    public CalculateAdapter(List<String> titles, List<Integer> drawableList, Activity activity) {
         this.titles = titles;
+        this.drawableList = drawableList;
         this.activity = activity;
     }
 
@@ -39,19 +43,16 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
 
     @Override
     public void onBindViewHolder(CalculateAdapter.CalculateHolder holder, int position) {
-        List<Integer> drawableList = new ArrayList<>();
-        drawableList.add(R.drawable.calculate_1);
-        drawableList.add(R.drawable.calculate_2);
-        drawableList.add(R.drawable.calculate_3);
-        drawableList.add(R.drawable.calculate_4);
-        drawableList.add(R.drawable.calculate_5);
-        drawableList.add(R.drawable.calculate_6);
-        drawableList.add(R.drawable.calculate_7);
-        drawableList.add(R.drawable.calculate_8);
-        drawableList.add(R.drawable.calculate_9);
         holder.textView.setText(titles.get(position));
 //        Glide.with(activity).load(drawableList.get(position)).into(holder.imageView);
         holder.imageView.setImageResource(drawableList.get(position));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity,CalculatorActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override

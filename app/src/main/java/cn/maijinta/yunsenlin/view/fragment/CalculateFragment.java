@@ -21,8 +21,6 @@ public class CalculateFragment extends BaseFragment {
     @BindView(R.id.recyclerView_cal)
     RecyclerView recyclerView;
 
-    private List<String> titles;
-
     @Override
     protected int getPageLayoutId() {
         return R.layout.fragment_calculate;
@@ -30,7 +28,7 @@ public class CalculateFragment extends BaseFragment {
 
     @Override
     protected void initPageView(View rootView) {
-        titles = new ArrayList<>();
+        List<String> titles = new ArrayList<>();
         titles.add("原木计算器");
         titles.add("原条计算器");
         titles.add("锯材计算器");
@@ -40,6 +38,18 @@ public class CalculateFragment extends BaseFragment {
         titles.add("价格设定");
         titles.add("拍照计算");
         titles.add("计算规则");
+
+        List<Integer> drawableList = new ArrayList<>();
+        drawableList.add(R.drawable.calculate_1);
+        drawableList.add(R.drawable.calculate_2);
+        drawableList.add(R.drawable.calculate_3);
+        drawableList.add(R.drawable.calculate_4);
+        drawableList.add(R.drawable.calculate_5);
+        drawableList.add(R.drawable.calculate_6);
+        drawableList.add(R.drawable.calculate_7);
+        drawableList.add(R.drawable.calculate_8);
+        drawableList.add(R.drawable.calculate_9);
+
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3);
         //每个item的宽度设置
 //        gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
@@ -49,7 +59,7 @@ public class CalculateFragment extends BaseFragment {
 //            }
 //        });
         recyclerView.setLayoutManager(gridLayoutManager);
-        CalculateAdapter calculateAdapter = new CalculateAdapter(titles,getActivity());
+        CalculateAdapter calculateAdapter = new CalculateAdapter(titles,drawableList,getActivity());
         recyclerView.setAdapter(calculateAdapter);
     }
 }

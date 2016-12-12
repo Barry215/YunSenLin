@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_tv_background">
+
+    <TextView
+        android:id="@+id/item_tv_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:textColor="@color/activity_btn_text"
+        android:gravity="center"
+        app:layout_heightPercent="100%w"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>
