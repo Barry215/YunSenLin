@@ -25,7 +25,11 @@
 
 
     <color name="item_tv_background">#ffffff</color>
-    <color name="item_iv_background">#f4741e</color>
+    <color name="item_iv_background">#f98b42</color>
+    <color name="item_border">#3e3e3d</color>
+    <color name="item_border_selected">#80807c</color>
+    <color name="item_tv_background_selected">#80807c</color>
+    <color name="item_iv_background_selected">#b35a1d</color>
 
 
     <color name="cardView_background">#cbcacc</color>

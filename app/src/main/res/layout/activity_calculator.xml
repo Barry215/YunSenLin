@@ -44,13 +44,15 @@
             android:layout_marginLeft="30dp"
             />
 
-        <EditText
-            android:id="@+id/ed_calculate_1"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/tv_calculate_edit_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:text="0"
             android:textSize="18sp"
-            android:gravity="right"
+            android:textColor="@color/activity_text_accent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
             />
 
         <TextView
@@ -62,11 +64,16 @@
             android:textSize="18sp"
             />
 
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
         <ImageView
             android:id="@+id/iv_calculate_1"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:src="@drawable/edit_state"
             />
@@ -89,13 +96,15 @@
             android:layout_marginLeft="30dp"
             />
 
-        <EditText
-            android:id="@+id/ed_calculate_2"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/tv_calculate_edit_2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:text="0"
             android:textSize="18sp"
-            android:gravity="right"
+            android:textColor="@color/activity_text_accent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
             />
 
         <TextView
@@ -107,11 +116,16 @@
             android:textSize="18sp"
             />
 
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
         <ImageView
             android:id="@+id/iv_calculate_2"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:src="@drawable/edit_state"
             />

@@ -12,7 +12,6 @@ import java.util.List;
 import butterknife.BindView;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.base.BaseActivity;
-import cn.maijinta.yunsenlin.view.adapter.CalculateAdapter;
 import cn.maijinta.yunsenlin.view.adapter.CalculatorAdapter;
 
 /**

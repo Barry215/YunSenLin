@@ -58,7 +58,7 @@ public class CalculatorAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         if(holder instanceof CalculatorHolder_tv){
             ((CalculatorHolder_tv) holder).textView.setText(cal_items.get(position));
             if (position == 14){
-                holder.itemView.setBackgroundColor(activity.getResources().getColor(R.color.item_iv_background));
+                holder.itemView.setBackground(activity.getResources().getDrawable(R.drawable.item_iv_selector));
             }
             if (onItemClickListener != null){
                 ((CalculatorHolder_tv) holder).textView.setOnClickListener(new View.OnClickListener() {

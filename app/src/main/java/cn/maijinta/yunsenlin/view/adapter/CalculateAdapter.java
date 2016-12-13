@@ -18,6 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.CalculatorActivity;
+import cn.maijinta.yunsenlin.view.activity.PriceSettingActivity;
 
 /**
  * Created by frank on 16/11/30.
@@ -42,15 +43,20 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
     }
 
     @Override
-    public void onBindViewHolder(CalculateAdapter.CalculateHolder holder, int position) {
+    public void onBindViewHolder(CalculateAdapter.CalculateHolder holder, final int position) {
         holder.textView.setText(titles.get(position));
 //        Glide.with(activity).load(drawableList.get(position)).into(holder.imageView);
         holder.imageView.setImageResource(drawableList.get(position));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity,CalculatorActivity.class);
-                activity.startActivity(intent);
+                if (position == 6){
+                    Intent intent_6 = new Intent(activity,PriceSettingActivity.class);
+                    activity.startActivity(intent_6);
+                }else {
+                    Intent intent_1 = new Intent(activity,CalculatorActivity.class);
+                    activity.startActivity(intent_1);
+                }
             }
         });
     }

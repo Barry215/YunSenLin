@@ -23,6 +23,7 @@
         <activity android:name=".view.activity.RegisterCodeActivity"/>
         <activity android:name=".view.activity.RegisterPwdActivity"/>
         <activity android:name=".view.activity.CalculatorActivity"/>
+        <activity android:name=".view.activity.PriceSettingActivity"/>
 
     </application>
 
