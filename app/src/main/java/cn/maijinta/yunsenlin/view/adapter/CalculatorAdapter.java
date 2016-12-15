@@ -13,6 +13,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
+import cn.maijinta.yunsenlin.view.activity.base.OnItemClickListener;
 
 /**
  * Created by frank on 16/12/12.
@@ -26,9 +27,6 @@ public class CalculatorAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private OnItemClickListener onItemClickListener;
 
-    public interface OnItemClickListener {
-        void onItemClick(View view, int position);
-    }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener){
         this.onItemClickListener = onItemClickListener;

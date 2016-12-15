@@ -11,6 +11,7 @@
 
 
     <color name="activity_background">#394149</color>
+    <color name="activity_background_subWhite">#d6d5d5</color>
     <color name="activity_text">#cbcacc</color>
     <color name="activity_text_accent">#ffffff</color>
     <color name="activity_btn_background_white">#ffffff</color>
@@ -23,7 +24,6 @@
     <color name="activity_ed_background">#ffffff</color>
 
 
-
     <color name="item_tv_background">#ffffff</color>
     <color name="item_iv_background">#f98b42</color>
     <color name="item_border">#3e3e3d</color>
@@ -32,12 +32,16 @@
     <color name="item_iv_background_selected">#b35a1d</color>
 
 
-    <color name="cardView_background">#cbcacc</color>
+    <color name="cardView_background">#e7e6e9</color>
     <color name="cardView_text">#394149</color>
     <color name="cardView_text_time">#5d6164</color>
     <color name="cardView_text_red">#de4332</color>
     <color name="cardView_text_green">#00a57b</color>
+    <color name="cardView_text_blue">#00b2eb</color>
+    <color name="cardView_menu_red">#de4332</color>
 
+    <color name="GRAY">#fd6b6b6b</color>
+    <color name="WHITE">#ffffff</color>
 
     <color name="prompt_text_color">#cbcacc</color>
     <color name="prompt_btn_color">#394149</color>

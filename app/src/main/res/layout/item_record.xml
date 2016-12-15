@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE">
+
+
+    <CheckBox
+        android:id="@+id/item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:button="@drawable/checkbox_selector"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_record"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        android:background="@color/cardView_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/item_card"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原木2013"
+                    android:textSize="18sp"
+                    android:textColor="@color/cardView_text"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016-09-12 12:00:25"
+                    android:textSize="16sp"
+                    android:textColor="@color/cardView_text_time"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_record_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.029"
+                android:textColor="@color/cardView_text_blue"
+                android:textSize="22sp"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

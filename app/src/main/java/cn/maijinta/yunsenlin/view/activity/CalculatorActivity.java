@@ -12,6 +12,7 @@ import java.util.List;
 import butterknife.BindView;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.base.BaseActivity;
+import cn.maijinta.yunsenlin.view.activity.base.OnItemClickListener;
 import cn.maijinta.yunsenlin.view.adapter.CalculatorAdapter;
 
 /**
@@ -88,7 +89,7 @@ public class CalculatorActivity extends BaseActivity {
         recyclerView.setLayoutManager(gridLayoutManager);
         CalculatorAdapter calculatorAdapter = new CalculatorAdapter(this,cal_items,cal_drawables);
         recyclerView.setAdapter(calculatorAdapter);
-        calculatorAdapter.setOnItemClickListener(new CalculatorAdapter.OnItemClickListener() {
+        calculatorAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(CalculatorActivity.this, "我是"+position, Toast.LENGTH_SHORT).show();

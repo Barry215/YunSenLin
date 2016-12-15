@@ -33,5 +33,6 @@ dependencies {
     compile 'com.zhy:percent-support-extends:1.1.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.2'
     testCompile 'junit:junit:4.12'
 }

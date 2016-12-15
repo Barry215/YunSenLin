@@ -19,6 +19,7 @@ import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.CalculatorActivity;
 import cn.maijinta.yunsenlin.view.activity.PriceSettingActivity;
+import cn.maijinta.yunsenlin.view.activity.RecordActivity;
 
 /**
  * Created by frank on 16/11/30.
@@ -53,6 +54,9 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
                 if (position == 6){
                     Intent intent_6 = new Intent(activity,PriceSettingActivity.class);
                     activity.startActivity(intent_6);
+                }else if (position == 3){
+                    Intent intent_3 = new Intent(activity,RecordActivity.class);
+                    activity.startActivity(intent_3);
                 }else {
                     Intent intent_1 = new Intent(activity,CalculatorActivity.class);
                     activity.startActivity(intent_1);
