@@ -25,6 +25,8 @@
         <activity android:name=".view.activity.CalculatorActivity"/>
         <activity android:name=".view.activity.PriceSettingActivity"/>
         <activity android:name=".view.activity.RecordActivity"/>
+        <activity android:name=".view.activity.SearchActivity"/>
+        <activity android:name=".view.activity.EvaluateActivity"/>
 
     </application>
 

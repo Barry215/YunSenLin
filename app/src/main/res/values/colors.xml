@@ -43,6 +43,8 @@
     <color name="GRAY">#fd6b6b6b</color>
     <color name="WHITE">#ffffff</color>
 
+    <color name="search_icon_tint">#a4a4a4</color>
+
     <color name="prompt_text_color">#cbcacc</color>
     <color name="prompt_btn_color">#394149</color>
     <color name="prompt_btn_background">#ffffff</color>
