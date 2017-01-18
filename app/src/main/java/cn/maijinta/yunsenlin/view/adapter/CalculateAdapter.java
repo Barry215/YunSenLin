@@ -17,10 +17,12 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
+import cn.maijinta.yunsenlin.view.activity.CalculateRuleActivity;
 import cn.maijinta.yunsenlin.view.activity.CalculatorActivity;
 import cn.maijinta.yunsenlin.view.activity.EvaluateActivity;
 import cn.maijinta.yunsenlin.view.activity.PriceSettingActivity;
 import cn.maijinta.yunsenlin.view.activity.RecordActivity;
+import cn.maijinta.yunsenlin.view.activity.RegularActivity;
 import cn.maijinta.yunsenlin.view.activity.SearchActivity;
 
 /**
@@ -62,6 +64,9 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
                 }else if (position == 5){
                     Intent intent_5 = new Intent(activity,EvaluateActivity.class);
                     activity.startActivity(intent_5);
+                }else if (position == 8){
+                    Intent intent_8 = new Intent(activity, RegularActivity.class);
+                    activity.startActivity(intent_8);
                 }else {
                     Intent intent_1 = new Intent(activity,CalculatorActivity.class);
                     activity.startActivity(intent_1);

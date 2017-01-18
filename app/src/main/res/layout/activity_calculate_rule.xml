@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_regular_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="默认计算规则设置"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_regular_rule_1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="请您选择您使用的国家标准"
+        android:textSize="20sp"
+        android:textColor="@color/activity_text_accent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原木"
+        android:textColor="@color/activity_text_accent"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_rule_1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="国标 2013标准(推荐)"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_register_next_true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_rule_2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="国标 1984标准(旧)"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_register_next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原条"
+        android:textColor="@color/activity_text_accent"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_rule_3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="国标 1999标准(推荐)"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_register_next_true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_rule_4"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="国标 1999标准(推荐)"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_register_next"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

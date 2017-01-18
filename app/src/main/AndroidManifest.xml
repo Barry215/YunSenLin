@@ -27,6 +27,8 @@
         <activity android:name=".view.activity.RecordActivity"/>
         <activity android:name=".view.activity.SearchActivity"/>
         <activity android:name=".view.activity.EvaluateActivity"/>
+        <activity android:name=".view.activity.RegularActivity"/>
+        <activity android:name=".view.activity.CalculateRuleActivity"/>
 
     </application>
 
