@@ -29,7 +29,7 @@ public class RecordAdapter extends SwipeMenuAdapter<RecordAdapter.RecordHolder> 
     private Activity activity;
     private List<String> priceList;
     private List<RecordHolder> recordHolderList = new ArrayList<>();
-    private static boolean checkView_state = false;
+    private boolean checkView_state = false;
 
     public RecordAdapter(Activity activity,List<String> priceList) {
         this.activity = activity;
@@ -52,6 +52,11 @@ public class RecordAdapter extends SwipeMenuAdapter<RecordAdapter.RecordHolder> 
     @Override
     public void onBindViewHolder(RecordAdapter.RecordHolder holder, int position) {
         holder.textView.setText(priceList.get(position));
+        if (checkView_state){
+            holder.checkBox.setVisibility(View.VISIBLE);
+        }else {
+            holder.checkBox.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -64,27 +69,28 @@ public class RecordAdapter extends SwipeMenuAdapter<RecordAdapter.RecordHolder> 
             showCheckView();
             relativeLayout.setVisibility(View.VISIBLE);
             item.setTitle("完成");
-//            swipeMenuRecyclerView.setItemViewSwipeEnabled(false);
+            swipeMenuRecyclerView.setItemViewSwipeEnabled(false);
         }else {
             hideCheckView();
             relativeLayout.setVisibility(View.GONE);
             item.setTitle("编辑");
-//            swipeMenuRecyclerView.setItemViewSwipeEnabled(true);
+            swipeMenuRecyclerView.setItemViewSwipeEnabled(true);
         }
     }
 
     public void showCheckView(){
+        checkView_state = true;
         for (RecordHolder recordHolder : recordHolderList){
             recordHolder.openCheckView();
         }
-        checkView_state = true;
+
     }
 
     public void hideCheckView(){
+        checkView_state = false;
         for (RecordHolder recordHolder : recordHolderList){
             recordHolder.closeCheckView();
         }
-        checkView_state = false;
     }
 
     public class RecordHolder extends RecyclerView.ViewHolder {

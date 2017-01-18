@@ -7,7 +7,7 @@
     android:background="@color/activity_background">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_evaluate"
+        android:id="@+id/toolbar_regular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -22,46 +22,79 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="估值计算"
+            android:text="计算规则"
             android:textSize="20sp"
             android:textColor="@android:color/white"
             />
     </android.support.v7.widget.Toolbar>
 
     <Button
-        android:id="@+id/btn_evaluate_1"
-        android:layout_width="200dp"
+        android:id="@+id/btn_regular_1"
+        android:layout_width="300dp"
         android:layout_height="45dp"
-        android:text="胸径估算"
+        android:text="默认计算规则"
         android:textColor="@color/activity_btn_text_white"
         android:textSize="18sp"
         android:background="@drawable/btn_green_normal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="110dp"
-        />
-
-
-    <Button
-        android:id="@+id/btn_evaluate_2"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:text="根径估算"
-        android:textColor="@color/activity_btn_text_white"
-        android:textSize="18sp"
-        android:background="@drawable/btn_green_normal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/tv_regular_1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="估算结果仅供参考，请以当地林业局或者林业公安厅的标准为准"
+        android:text="当前未设置"
         android:textSize="16sp"
         android:textColor="@color/activity_text"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="计算规则解释和说明"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="当前算法版本"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_regular_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.02"
+        android:textSize="16sp"
+        android:textColor="@color/activity_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regular_4"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="软件编写者"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         />
 </LinearLayout>

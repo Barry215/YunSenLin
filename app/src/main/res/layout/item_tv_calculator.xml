@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/item_tv_selector">
+    >
 
     <TextView
         android:id="@+id/item_tv_calculator"
@@ -13,5 +13,6 @@
         android:textSize="20sp"
         android:textColor="@color/activity_btn_text"
         android:gravity="center"
+        android:background="@drawable/item_tv_selector"
         />
 </LinearLayout>

@@ -4,11 +4,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/item_iv_selector">
+    >
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:background="@drawable/item_iv_selector"
         >
 
         <ImageView

@@ -99,11 +99,12 @@ public class RecordActivity extends BaseActivity {
         priceList.add("22.855");
         priceList.add("23.855");
         priceList.add("24.855");
-        priceList.add("25.855");
-        priceList.add("26.855");
-        priceList.add("27.855");
-        priceList.add("28.855");
-        priceList.add("29.855");
+        priceList.add("24.850");
+        priceList.add("24.835");
+        priceList.add("24.865");
+        priceList.add("24.875");
+        priceList.add("24.885");
+
 
         //后期再试试自定义的滑动删除，或者找其他的库
         recordAdapter = new RecordAdapter(this,priceList);

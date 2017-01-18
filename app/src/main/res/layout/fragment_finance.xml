@@ -21,7 +21,7 @@
                 android:id="@+id/cv_fin_1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 app:cardCornerRadius="5dp"
                 android:gravity="center_horizontal">
 
@@ -157,7 +157,7 @@
                 android:id="@+id/cv_fin_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="5dp">
 
@@ -177,7 +177,7 @@
                 android:id="@+id/cv_fin_3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="5dp">
 
@@ -525,7 +525,7 @@
                 android:id="@+id/cv_fin_4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="5dp">
 
@@ -546,7 +546,7 @@
                 android:id="@+id/cv_fin_5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="5dp">
 
@@ -566,7 +566,7 @@
                 android:id="@+id/cv_fin_6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="5dp">
 
@@ -586,7 +586,7 @@
                 android:id="@+id/cv_fin_7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_widthPercent="80%w"
+                app:layout_widthPercent="90%w"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
                 app:cardCornerRadius="5dp">
