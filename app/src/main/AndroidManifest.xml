@@ -29,6 +29,9 @@
         <activity android:name=".view.activity.EvaluateActivity"/>
         <activity android:name=".view.activity.RegularActivity"/>
         <activity android:name=".view.activity.CalculateRuleActivity"/>
+        <activity android:name=".view.activity.BeforeBatchActivity"/>
+        <activity android:name=".view.activity.BatchActivity"/>
+        <activity android:name=".view.activity.TestActivity"/>
 
     </application>
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bef_batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="批量计算"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请您选择计算类型"
+        android:textColor="@color/activity_text_accent"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btn_bef_batch_1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="我要买木材"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/btn_bef_batch_2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="我要卖木材"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请设置一下卖方"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/activity_text_accent"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_bef_batch"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/activity_ed_text"
+        android:background="@drawable/ed_register"
+        android:textCursorDrawable="@drawable/ed_cursor"
+        />
+
+    <Button
+        android:id="@+id/btn_bef_batch_3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="确定"
+        android:textColor="@color/activity_btn_text_white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_green_normal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_subWhite"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="批量计算"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/fragment_text_accent"
+        app:tabTextColor="@color/fragment_text"
+        app:tabIndicatorColor="@color/fragment_text_accent"
+        app:tabBackground="@color/fragment_background"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_batch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/activity_btn_background_white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总根数:  "
+            android:textSize="20sp"
+            android:textColor="@color/activity_text_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:textSize="20sp"
+            android:textColor="@color/activity_text_green"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/WHITE">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_batch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/item_border"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="总材积"
+                android:textColor="@color/activity_text_dark"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_batch_1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="56.2581"
+                android:textColor="@color/activity_text_green"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="立方米"
+                android:textColor="@color/activity_text_dark"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="总价格"
+                android:textColor="@color/activity_text_dark"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_batch_2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="235.8"
+                android:textColor="@color/activity_text_green"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_batch_down_1"
+                android:layout_width="match_parent"
+                android:background="@color/activity_background_sub_blue"
+                android:layout_height="40dp"
+                android:text="查看账单"
+                android:textColor="@color/activity_text_accent"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_batch_down_2"
+                android:layout_width="match_parent"
+                android:background="@color/activity_background_sub_red"
+                android:layout_height="40dp"
+                android:text="价格设置"
+                android:textColor="@color/activity_text_accent"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

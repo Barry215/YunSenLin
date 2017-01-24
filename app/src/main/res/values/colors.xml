@@ -12,8 +12,12 @@
 
     <color name="activity_background">#394149</color>
     <color name="activity_background_subWhite">#d6d5d5</color>
+    <color name="activity_background_sub_blue">#59b2ea</color>
+    <color name="activity_background_sub_red">#f25f63</color>
     <color name="activity_text">#cbcacc</color>
+    <color name="activity_text_dark">#394149</color>
     <color name="activity_text_accent">#ffffff</color>
+    <color name="activity_text_green">#00a57b</color>
     <color name="activity_btn_background_white">#ffffff</color>
     <color name="activity_btn_background_green">#00a57b</color>
     <color name="activity_btn_background_subWhite">#c4c3c7</color>
