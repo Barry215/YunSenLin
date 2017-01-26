@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.yanzhenjie.recyclerview.swipe.Closeable;
 import com.yanzhenjie.recyclerview.swipe.OnSwipeMenuItemClickListener;
@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.base.BaseActivity;
 import cn.maijinta.yunsenlin.view.adapter.RecordAdapter;
@@ -41,6 +42,20 @@ public class RecordActivity extends BaseActivity {
 
     @BindView(R.id.relative_layout_record)
     RelativeLayout relativeLayout;
+
+    @BindView(R.id.tv_record_1)
+    TextView tv_all;
+
+    @BindView(R.id.tv_record_2)
+    TextView tv_del;
+
+    @OnClick(R.id.tv_record_1) void click_choose_all() {
+        recordAdapter.chooseAll();
+    }
+
+    @OnClick(R.id.tv_record_2) void click_del() {
+        recordAdapter.deleteChoose();
+    }
 
     private Activity mContext;
     private List<String> priceList;
@@ -73,8 +88,7 @@ public class RecordActivity extends BaseActivity {
         @Override
         public void onItemClick(Closeable closeable, int adapterPosition, int menuPosition, int direction) {
             if (menuPosition == 0) {// 删除按钮被点击。
-                priceList.remove(adapterPosition);
-                recordAdapter.notifyItemRemoved(adapterPosition);
+                recordAdapter.deletePosition(adapterPosition);
             }
         }
     };
@@ -94,16 +108,16 @@ public class RecordActivity extends BaseActivity {
 
     private void initPageView() {
         priceList = new ArrayList<>();
-        priceList.add("20.855");
-        priceList.add("21.855");
-        priceList.add("22.855");
-        priceList.add("23.855");
-        priceList.add("24.855");
-        priceList.add("24.850");
-        priceList.add("24.835");
-        priceList.add("24.865");
-        priceList.add("24.875");
-        priceList.add("24.885");
+        priceList.add("0.855");
+        priceList.add("1.855");
+        priceList.add("2.855");
+        priceList.add("3.855");
+        priceList.add("4.855");
+        priceList.add("5.855");
+        priceList.add("6.850");
+        priceList.add("7.835");
+        priceList.add("8.865");
+        priceList.add("9.875");
 
 
         //后期再试试自定义的滑动删除，或者找其他的库

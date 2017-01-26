@@ -9,23 +9,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.BeforeBatchActivity;
-import cn.maijinta.yunsenlin.view.activity.CalculateRuleActivity;
 import cn.maijinta.yunsenlin.view.activity.CalculatorActivity;
 import cn.maijinta.yunsenlin.view.activity.EvaluateActivity;
 import cn.maijinta.yunsenlin.view.activity.PriceSettingActivity;
 import cn.maijinta.yunsenlin.view.activity.RecordActivity;
 import cn.maijinta.yunsenlin.view.activity.RegularActivity;
-import cn.maijinta.yunsenlin.view.activity.SearchActivity;
-import cn.maijinta.yunsenlin.view.activity.TestActivity;
+
 
 /**
  * Created by frank on 16/11/30.
@@ -69,10 +64,7 @@ public class CalculateAdapter extends RecyclerView.Adapter<CalculateAdapter.Calc
                 }else if (position == 5){
                     Intent intent_5 = new Intent(activity,EvaluateActivity.class);
                     activity.startActivity(intent_5);
-                }else if (position == 7){
-                    Intent intent_7 = new Intent(activity, TestActivity.class);
-                    activity.startActivity(intent_7);
-                } else if (position == 8){
+                }else if (position == 8){
                     Intent intent_8 = new Intent(activity, RegularActivity.class);
                     activity.startActivity(intent_8);
                 }else {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/activity_background_subWhite"
     >
 
@@ -30,53 +30,53 @@
             />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/recycler_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@android:color/white"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
 
-        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
-            android:id="@+id/recycler_record"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+        <!--android:layout_alignParentBottom="true"-->
+
+        <TextView
+            android:id="@+id/tv_record_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="@color/cardView_text"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
             />
 
-        <RelativeLayout
-            android:id="@+id/relative_layout_record"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_record_2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:visibility="gone"
-            >
+            android:text="删除"
+            android:textColor="@color/cardView_text_red"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
 
-            <!--android:layout_alignParentBottom="true"-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="全选"
-                android:textColor="@color/cardView_text"
-                android:textSize="18sp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="10dp"
-                />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="删除"
-                android:textColor="@color/cardView_text_red"
-                android:textSize="18sp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                />
-        </RelativeLayout>
-    </LinearLayout>
+
+
 
 
 </LinearLayout>
