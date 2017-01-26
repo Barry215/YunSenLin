@@ -7,8 +7,8 @@
 
     <stroke
         android:width="0.5dp"
-        android:color="@color/activity_btn_background_subWhite" />
+        android:color="@color/activity_btn_background_green" />
 
     <solid
-        android:color="@color/activity_btn_background_subWhite"/>
+        android:color="@color/activity_btn_background_green"/>
 </shape>

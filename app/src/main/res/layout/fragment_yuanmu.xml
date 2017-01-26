@@ -8,7 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:paddingTop="10dp"
+        android:background="@color/WHITE"
+        >
 
         <Button
             android:id="@+id/btn_fg_yuanmu_1"
@@ -52,8 +54,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/WHITE"
+        >
 
         <Button
             android:id="@+id/btn_fg_yuanmu_4"
@@ -197,7 +201,7 @@
         <ImageView
             android:layout_width="18dp"
             android:layout_height="18dp"
-            android:src="@drawable/down_cal"
+            android:src="@drawable/edit_state"
             android:layout_marginLeft="5dp"
             />
 
