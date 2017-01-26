@@ -33,7 +33,7 @@
     <color name="item_border">#3e3e3d</color>
     <color name="item_border_selected">#80807c</color>
     <color name="item_tv_background_selected">#80807c</color>
-    <color name="item_iv_background_selected">#b35a1d</color>
+    <color name="item_iv_background_selected">#a1541e</color>
 
 
     <color name="cardView_background">#e7e6e9</color>

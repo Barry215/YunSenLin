@@ -32,6 +32,8 @@
         <activity android:name=".view.activity.BeforeBatchActivity"/>
         <activity android:name=".view.activity.BatchActivity"/>
         <activity android:name=".view.activity.TestActivity"/>
+        <activity android:name=".view.activity.FindPsdActivity"/>
+        <activity android:name=".view.activity.FindPsdSucActivity"/>
 
     </application>
 

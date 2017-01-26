@@ -3,6 +3,7 @@ package cn.maijinta.yunsenlin.view.activity;
 import android.content.Intent;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -11,32 +12,25 @@ import cn.maijinta.yunsenlin.R;
 import cn.maijinta.yunsenlin.view.activity.base.BaseActivity;
 
 /**
- * Created by frank on 16/12/7.
+ * Created by frank on 17/1/26.
  */
 
-public class LoginActivity extends BaseActivity {
-    @BindView(R.id.toolbar_login_1)
+public class FindPsdSucActivity extends BaseActivity {
+
+    @BindView(R.id.toolbar_find_psd_suc)
     Toolbar toolbar;
 
-    @BindView(R.id.tv_login_3)
-    TextView tv_3;
+    @BindView(R.id.tv_find_psd_suc_1)
+    TextView textView;
 
-    @BindView(R.id.tv_login_1)
-    TextView tv_1;
-
-    @OnClick(R.id.tv_login_3) void click_tv_3() {
-        Intent intent_1 = new Intent(this, RegisterPhoneActivity.class);
+    @OnClick(R.id.tv_find_psd_suc_1) void click_tv() {
+        Intent intent_1 = new Intent(this,LoginActivity.class);
         startActivity(intent_1);
-    }
-
-    @OnClick(R.id.tv_login_1) void click_tv_1() {
-        Intent intent_2 = new Intent(this, FindPsdActivity.class);
-        startActivity(intent_2);
     }
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_login;
+        return R.layout.activity_find_psd_suc;
     }
 
     @Override
@@ -55,4 +49,5 @@ public class LoginActivity extends BaseActivity {
             }
         });
     }
+
 }

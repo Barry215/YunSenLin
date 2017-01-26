@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_find_psd_suc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更改密码"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_find_psd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/app_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:layout_widthPercent="30%w"
+        app:layout_heightPercent="30%w"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/success"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改成功"
+            android:textSize="18sp"
+            android:textColor="@color/activity_text_accent"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_find_psd_suc_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请重新登录"
+        android:textColor="@color/activity_text_accent"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>

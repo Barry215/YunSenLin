@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_find_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:elevation="0dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更改密码"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_find_psd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/app_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_widthPercent="30%w"
+        app:layout_heightPercent="30%w"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_find_psd_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="60%w"
+        app:layout_marginTopPercent="10%w"
+        app:hintTextAppearance="@style/FloatingStyle"
+        >
+
+        <EditText
+            android:id="@+id/ed_find_psd_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/activity_ed_background"
+            android:hint="输入旧密码"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_find_psd_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="60%w"
+        app:hintTextAppearance="@style/FloatingStyle"
+        >
+
+        <EditText
+            android:id="@+id/ed_find_psd_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/activity_ed_background"
+            android:hint="输入新密码"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_find_psd_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="60%w"
+        app:hintTextAppearance="@style/FloatingStyle"
+        >
+
+        <EditText
+            android:id="@+id/ed_find_psd_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/activity_ed_background"
+            android:hint="再次输入密码"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_find_psd"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="更改密码"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/btn_login"
+        app:layout_widthPercent="40%w"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>
