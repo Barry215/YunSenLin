@@ -35,7 +35,7 @@
         android:text="默认计算规则"
         android:textColor="@color/activity_btn_text_white"
         android:textSize="18sp"
-        android:background="@drawable/btn_green_normal"
+        android:background="@drawable/btn_green_selected"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         />
@@ -58,7 +58,7 @@
         android:text="计算规则解释和说明"
         android:textColor="@color/activity_btn_text_white"
         android:textSize="18sp"
-        android:background="@drawable/btn_green_normal"
+        android:background="@drawable/btn_green_selected"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         />
@@ -70,7 +70,7 @@
         android:text="当前算法版本"
         android:textColor="@color/activity_btn_text_white"
         android:textSize="18sp"
-        android:background="@drawable/btn_green_normal"
+        android:background="@drawable/btn_green_selected"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         />
@@ -93,7 +93,7 @@
         android:text="软件编写者"
         android:textColor="@color/activity_btn_text_white"
         android:textSize="18sp"
-        android:background="@drawable/btn_green_normal"
+        android:background="@drawable/btn_green_selected"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         />
